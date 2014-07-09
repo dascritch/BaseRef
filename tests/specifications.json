@@ -1,0 +1,17 @@
+{
+	"isValid" : {
+		"" : true,
+		"0" : true,
+		"A" : true,
+		"_" : false,
+		"O" : false,
+		"5FF90" : true,
+		"4QZ0" : false
+	},
+	"encode" : {
+		"0" : "0",
+		"1" : "1",
+		"9" : "9",
+//		"10" : "A"
+	}
+}
