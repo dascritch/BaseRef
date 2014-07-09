@@ -1,9 +1,3 @@
-/**
- * encode sould respond false on untranslatable
- * decode sould respond false on untranslatable
- * decode should be case insensitive
- */
-
 
 function BaseRef() {
 	var self = {
@@ -19,10 +13,12 @@ function BaseRef() {
 		},
 		encode : function(b10) {
 			if (Number.isNaN(b10)) {
+				this.exception('not a number');
 				return false;
 			}
 			b10 = Number(b10);
 			if ( (b10<0) || ( Math.floor(b10) != b10) ) {
+				this.exception('not a positive integer');
 				return false;
 			}
 			var out = '';
@@ -36,6 +32,7 @@ function BaseRef() {
 		decode : function(based , multiplicande) {
 			based = based.toUpperCase();
 			if (!this.isValid(based)) {
+				this.exception('not a valid coded-number');
 				return false;
 			}
 			var numeric = 0;
