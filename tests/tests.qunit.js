@@ -40,8 +40,8 @@ function test_for_method(function_name,tests) {
 
 		for(var trythis in tests) {
 			assert.equal(
-				tests[trythis] ,
 				baseref[function_name](trythis) ,
+				tests[trythis] ,
 				'BaseRef.'+function_name +'( '+String(trythis)+' ) = '+String(tests[trythis])
 			);
 		}

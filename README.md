@@ -19,7 +19,7 @@ Stay 29 available glyphes (so the name of the project) : `0123456789ACDEFGHJKMNP
 
 Intentions
 ----------
-
+* Coding rules are : TDD, DRY, safe
 * Is it possible to do TDD in various languages with only one specification file ?
 * Do tests suite have different behaviours ?
 * What language is smartest to read afterwards ?
