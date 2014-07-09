@@ -42,7 +42,7 @@ function test_for_method(function_name,tests) {
 			assert.equal(
 				tests[trythis] ,
 				baseref[function_name](trythis) ,
-				'BaseRef.'+function_name +'( '+String(trythis)+' )'
+				'BaseRef.'+function_name +'( '+String(trythis)+' ) = '+String(tests[trythis])
 			);
 		}
 		 QUnit.start();

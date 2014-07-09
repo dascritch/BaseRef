@@ -46,7 +46,7 @@ afterEach(function() {
 });
 
 function test_value_for_method(function_name,tests,trythis) {
-	it('BaseRef.'+function_name +'( '+String(trythis)+' )'  , function(done) {
+	it('BaseRef.'+function_name +'( '+String(trythis)+' ) = '+String(tests[trythis])  , function(done) {
 		expect( baseref[function_name](trythis) )
 		.toBe( tests[trythis] );
 		done();

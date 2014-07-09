@@ -1,6 +1,7 @@
 Base Ref
 ========
-Utilities to transcode a integer from and to base 10 to a alphanumerical base where the handwritten numbers won't have potential homoglyphes. It was first developed in a defunct service called * dAgence * as base 33 for generating command references, hence the “base ref” name. It is actually a base 29.
+Utilities to transcode a integer from and to base 10 to a alphanumerical base where the handwritten numbers won't have potential homoglyphes. It was first developed in a defunct service called “dAgence” as base 33 for generating command references, hence the “base ref” name.
+It is actually a base 29.
 
 This project is just an exercice (TDD and implementation in numerous languages), but you can use it and fork it. A work-in-progress (french written) post will be published during autumn 2014.
 
@@ -46,7 +47,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Versions
 --------
-Repository : <https://github.com/dascritch/base29>
+Repository : <https://github.com/dascritch/BaseRef>
 
 Keeping in touch
 ----------------
