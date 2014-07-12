@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Python"
+python3 tests.py
