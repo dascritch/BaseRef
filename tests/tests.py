@@ -1,7 +1,5 @@
 import unittest, io, re, json
 
-specifications = json.load( open('specifications.json') )
-
 class BaseRef():
     glyphs = '0123456789ACDEFGHJKMNPQRTUVWX'
     base = len(glyphs)
@@ -33,20 +31,24 @@ class BaseRef():
             return False
         numeric = 0;
         if ( multiplicande == None ) :
-             multiplicande = 0
+             multiplicande = 1
         if (len(based) > 1) :
-            numeric += self.decode( based.substr(0,based.length-1) , multiplicande+1 ) * Math.pow( this.base, multiplicande );
-            based = based.substr(-1);
-        numeric += this.glyphs.indexOf( based );
+            numeric += self.decode( based[len(based)-1] , multiplicande + 1 ) * pow( self.base, multiplicande );
+            based = based[:1];
+        print('---',based)
+        numeric += self.glyphs.index( based );
         return numeric;
 #
+
+# https://stackoverflow.com/questions/6921699/can-i-get-json-to-load-into-an-ordereddict-in-python
+specifications = json.load( open('specifications.json') )
 
 class BaseRefTests(unittest.TestCase):
     def test(self):
         baseref = BaseRef()
-        for func_name , tests in specifications.items() :
+        for func_name , tests in sorted( specifications.items() ) :
             print(func_name)
-            for parameter, expects in tests.items() :
+            for parameter, expects in sorted( tests.items() ) :
                 print(parameter, ' -> ', expects)
                 self.assertEqual( getattr(baseref,func_name)(parameter), expects)
 
