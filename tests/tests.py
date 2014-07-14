@@ -1,4 +1,4 @@
-import unittest, io, re, json, collections
+import unittest, io, re, json, collections, math
 
 class BaseRef():
     glyphs = '0123456789ACDEFGHJKMNPQRTUVWX'
@@ -13,29 +13,29 @@ class BaseRef():
 
     def encode(self, b10) :
         out = ''
-        try:
-            b10 = int(b10, 10)
-        except ValueError:
-            return False
+        if isinstance(b10, str) :
+            try:
+                b10 = int(b10, 10)
+            except ValueError:
+                return False
         if (b10 < 0) or (b10 != round(b10)) :
             return False
         if (b10 >= self.base) :
-            out = self.encode( b10 / self.base )
+            out = self.encode( math.floor( b10 / self.base ) )
             b10 = b10 % self.base
         out += self.glyphs[b10];
         return out
 
-    def decode(self, based, multiplicande = 1) :
+    def decode(self, based) :
+        based = str.upper(based)
         if self.isValid(based) == False :
             # self.exception('not a valid coded-number');
             return False
         numeric = 0;
-        print('---',based,',',multiplicande)
         if (len(based) > 1) :
-            multiplicande += 1
-            numeric += self.decode( based[:-1] , multiplicande ) * pow( self.base, multiplicande );
-            based = based[-1:];
-        numeric += self.glyphs.index( based );
+            numeric += self.decode( based[:-1] ) * self.base
+            based = based[-1:]
+        numeric += self.glyphs.index( based )
         return numeric;
 #
 
