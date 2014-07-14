@@ -25,6 +25,20 @@ Intentions
 * What language is smartest to read afterwards ?
 * Ok, it's OOP, but have we smartests patterns ?
 
+API
+---
+API should implements :
+
+* `isValid`(string)
+* * true : if a string has the glphes even lowercase or a empty string
+* * false  : elsewhere
+* `encode`(absolute integer)
+* * string : the translated string
+* * false :if not an absolute integer, like real or negative numbers or NaN
+* `decode`(strng)
+* * integer : the transcoded number
+* * false : if not translatable
+
 Licence
 -------
 Copyright (C) 2014 Xavier "dascritch" Mouton-Dubosc
