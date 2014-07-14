@@ -4,6 +4,7 @@ Doing
 * Post mortem on blog
 * blog on XHR/CSP/CORS issues per browsers
 * blog on error reporting per browsers
+* lbog on json decoding and kjey ordering by languages (interesting !)
 
 Actual bugs
 -----------
@@ -15,7 +16,6 @@ TODO implementations
 --------------------
 
 * PHP
-* Python
 * Ruby
 * Rust
 * Dart

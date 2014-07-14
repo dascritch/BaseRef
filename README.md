@@ -35,7 +35,7 @@ API should implements :
 * `encode`(absolute integer)
 * * string : the translated string
 * * false :if not an absolute integer, like real or negative numbers or NaN
-* `decode`(strng)
+* `decode`(string)
 * * integer : the transcoded number
 * * false : if not translatable
 
