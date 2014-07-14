@@ -9,13 +9,13 @@ But if you find it really useful, I'll be happy.
 
 Author : [Xavier "dascritch" Mouton-Dubosc](http://dascritch.com)
 
-Princips
---------
-The “conventionnal” base 36 : `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+Principles
+----------
+The “conventionnal” base 36 uses numbers then letters : `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
 I'm removing any letter that may be confused with numbers when (badly) handwritten :`BILOSYZ`
 
-Stay 29 available glyphes (so the name of the project) : `0123456789ACDEFGHJKMNPQRTUVWX`
+We have 29 available glyphes : `0123456789ACDEFGHJKMNPQRTUVWX`
 
 Intentions
 ----------
@@ -24,6 +24,7 @@ Intentions
 * Do tests suite have different behaviours ?
 * What language is smartest to read afterwards ?
 * Ok, it's OOP, but have we smartests patterns ?
+* How Json is decoded ?
 
 API
 ---
