@@ -31,11 +31,11 @@ API
 The class should implements :
 
 * `isValid`(string)
- * true : if a string has the glphes even lowercase or a empty string
+ * true : if a string has the glyphes even lowercase or a empty string
  * false  : elsewhere
 * `encode`(absolute integer)
  * string : the translated string
- * false :if not an absolute integer, like real or negative numbers or NaN
+ * false : if not an absolute integer, like real or negative numbers or NaN
 * `decode`(string)
  * integer : the transcoded number
  * false : if not translatable
@@ -49,9 +49,11 @@ Implementations
 
 Noted issues
 ------------
-* Javascript nor Python enumerate tessts in the same order as the `specifications.json` file
+* Javascript and Python are NOT enumerating tests in the same order as the `specifications.json` file. Really depends or they respective interpretors.
 * Javascript tests must be in autonomous functions, due to the fact that paramaters in functions are references, and so the async'ed nature of tests made string erroneous
-* Typo in documentations : QUnit, Atoum
+* Noted (and corrected, that is the exercise goal) typos in documentations :
+ * [QUnit](https://github.com/jquery/qunitjs.com/pull/77)
+ * [Atoum](https://github.com/atoum/atoum/pull/345)
 
 Licence
 -------
