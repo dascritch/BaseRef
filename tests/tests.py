@@ -3,7 +3,7 @@ sys.path.append( os.path.abspath('..' ) )
 from baseref import baseref
 
 # https://stackoverflow.com/questions/6921699/can-i-get-json-to-load-into-an-ordereddict-in-python
-# https://docs.python.org/3.3/library/json.html#basic-usage function "load". Why didn't they put id="" on each function definition ????
+# https://docs.python.org/3.3/library/json.html#basic-usage function "load". Why didn't they put id="" on each function definition ???
 specifications = json.load( open('specifications.json'),object_pairs_hook = collections.OrderedDict )
 
 class BaseRefTests(unittest.TestCase):

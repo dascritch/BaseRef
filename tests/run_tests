@@ -2,3 +2,6 @@
 
 echo "Python"
 python3 tests.py
+
+echo "PHP (Atoum)"
+php tests.atoum.php

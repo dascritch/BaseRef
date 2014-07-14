@@ -28,17 +28,30 @@ Intentions
 
 API
 ---
-API should implements :
+The class should implements :
 
 * `isValid`(string)
-* * true : if a string has the glphes even lowercase or a empty string
-* * false  : elsewhere
+ * true : if a string has the glphes even lowercase or a empty string
+ * false  : elsewhere
 * `encode`(absolute integer)
-* * string : the translated string
-* * false :if not an absolute integer, like real or negative numbers or NaN
+ * string : the translated string
+ * false :if not an absolute integer, like real or negative numbers or NaN
 * `decode`(string)
-* * integer : the transcoded number
-* * false : if not translatable
+ * integer : the transcoded number
+ * false : if not translatable
+It may have an `exception` for debug purposes
+
+Implementations
+---------------
+* Javascript (with QUnit and Jasmine)
+* Python 3
+* DOING : PHP (with Atoum)
+
+Noted issues
+------------
+* Javascript nor Python enumerate tessts in the same order as the `specifications.json` file
+* Javascript tests must be in autonomous functions, due to the fact that paramaters in functions are references, and so the async'ed nature of tests made string erroneous
+* Typo in documentations : QUnit, Atoum
 
 Licence
 -------
