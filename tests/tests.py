@@ -32,7 +32,8 @@ class BaseRef():
         numeric = 0;
         print('---',based,',',multiplicande)
         if (len(based) > 1) :
-            numeric += self.decode( based[:-1] , multiplicande+1 ) * pow( self.base, multiplicande );
+            multiplicande += 1
+            numeric += self.decode( based[:-1] , multiplicande ) * pow( self.base, multiplicande );
             based = based[-1:];
         numeric += self.glyphs.index( based );
         return numeric;
@@ -40,7 +41,7 @@ class BaseRef():
 
 # https://stackoverflow.com/questions/6921699/can-i-get-json-to-load-into-an-ordereddict-in-python
 # https://docs.python.org/3.3/library/json.html#basic-usage function "load". Why didn't they put id="" on each function definition ????
-specifications = json.load( open('specifications.json'), None, None, None, None, None, collections.OrderedDict )
+specifications = json.load( open('specifications.json'),object_pairs_hook = collections.OrderedDict )
 
 class BaseRefTests(unittest.TestCase):
     def test(self):
