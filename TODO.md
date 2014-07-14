@@ -1,10 +1,10 @@
 Doing
 -----
-* Javascript
 * Post mortem on blog
 * blog on XHR/CSP/CORS issues per browsers
 * blog on error reporting per browsers
-* lbog on json decoding and kjey ordering by languages (interesting !)
+* blog on json decoding and key ordering by languages (interesting !)
+* blog on per languages issues, like json_decoding in php (i never noticied it !)
 
 Actual bugs
 -----------
@@ -15,7 +15,6 @@ Actual bugs
 TODO implementations
 --------------------
 
-* PHP
 * Ruby
 * Rust
 * Dart
