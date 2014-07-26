@@ -17,6 +17,8 @@ I'm removing any letter that may be confused with numbers when (badly) handwritt
 
 We have 29 available glyphes : `0123456789ACDEFGHJKMNPQRTUVWX`
 
+Do you read E55S or EGGS ? https://twitter.com/ldodds/status/492965240657944576
+
 Intentions
 ----------
 * Coding rules are : TDD, DRY, safe
