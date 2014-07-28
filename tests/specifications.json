@@ -2,9 +2,18 @@
 	"isValid" : {
 		"" : true,
 		"0" : true,
+		"9" : true,
 		"A" : true,
+		"X" : true,
 		"_" : false,
+		"B" : false,
+		"G" : false,
+		"I" : false,
+		"L" : false,
 		"O" : false,
+		"S" : false,
+		"Y" : false,
+		"Z" : false,
 		"5FF90" : true,
 		"4QZ0" : false
 	},

@@ -5,3 +5,6 @@ python3 tests.py
 
 echo "PHP (Atoum)"
 php tests.atoum.php
+
+echo "Ruby"
+ruby tests.rb 

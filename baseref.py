@@ -1,7 +1,7 @@
 import re, math
 
 class baseref():
-    glyphs = '0123456789ACDEFHJKMNPQRTUVWX'
+    glyphs = '0123456789ACDEHFJKMNPQRTUVWX'
     base = len(glyphs)
     reg = re.compile(r'^['+glyphs+']*$')
 
