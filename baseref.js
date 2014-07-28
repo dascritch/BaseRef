@@ -4,7 +4,7 @@ function BaseRef() {
 		base : 0,
 		valid : /^$/,
 
-		glyphs : '0123456789ACDEFGHJKMNPQRTUVWX',
+		glyphs : '0123456789ACDEFHJKMNPQRTUVWX',
 		isValid : function(validate) {
 			return this.valid.test(validate);
 		},

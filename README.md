@@ -11,11 +11,11 @@ Author : [Xavier "dascritch" Mouton-Dubosc](http://dascritch.com)
 
 Principles
 ----------
-The “conventionnal” base 36 uses numbers then letters : `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+The “conventionnal” base 36 uses numbers then letters : `0123456789ABCDEFHIJKLMNOPQRSTUVWXYZ`
 
-I'm removing any letter that may be confused with numbers when (badly) handwritten :`BILOSYZ`
+I'm removing any letter that may be confused with numbers when (badly) handwritten :`BGILOSYZ`
 
-We have 29 available glyphes : `0123456789ACDEFGHJKMNPQRTUVWX`
+We have 28 available glyphes : `0123456789ACDEFHJKMNPQRTUVWX`
 
 Do you read E55S or EGGS ? https://twitter.com/ldodds/status/492965240657944576
 

@@ -3,7 +3,7 @@
 namespace dascritch;
 
 class baseref {
-	private $glyphs = '0123456789ACDEFGHJKMNPQRTUVWX';
+	private $glyphs = '0123456789ACDEFHJKMNPQRTUVWX';
 	private $base = 0;
 
 	public function __construct() {
