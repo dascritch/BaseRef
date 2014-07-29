@@ -20,7 +20,7 @@ Noted issues
 * No ternary operator in Python.
 * In Python, (standard) pow(int,int) returns an integer, where math.pow(int,int) returns a real
 * Strangely, PHP doesn't accept strict comparison between a floored int and an int : `$b10 = (int) $b10; if ( ($b10<0) || (floor($b10) != $b10) )` .
-* in PHP::`decode($based)`, `$based` should be casted as string (`strtoupper()` do the job), seems that `json_decode()` saw `"0"` and `"9"` as integers !
+* in PHP::`decode($based)`, `$based` should be casted as string (`strtoupper()` do the job), seems that `json_decode()` translate keys strings in integers, so `"0"` and `"9"` are integers !
 * Noted (and corrected, that is the exercise goal) typos in documentations :
  * [QUnit](https://github.com/jquery/qunitjs.com/pull/77)
  * [Atoum](https://github.com/atoum/atoum/pull/345)

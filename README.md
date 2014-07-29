@@ -47,7 +47,8 @@ Implementations
 ---------------
 * Javascript (with QUnit and Jasmine)
 * Python 3
-* DOING : PHP (with Atoum)
+* PHP (with Atoum)
+* DOING : Ruby
 
 Licence
 -------

@@ -23,6 +23,10 @@ class TestBaseRef < Test::Unit::TestCase
         assert_equal("A" , baseref.encode("10"))
         assert_equal("X" , baseref.encode("27"))
         assert_equal("10" , baseref.encode("28"))
+        assert_equal("11" , baseref.encode("29"))
+        assert_equal("1X" , baseref.encode("55"))
+        assert_equal("XX" , baseref.encode("783"))
+        assert_equal("100" , baseref.encode("784"))
     end
 
 end

@@ -10,10 +10,14 @@ class BaseRef
 	end
 
 	def encode(b10)
-		b10 = b10.to_i(10)
-		if (b10 >= @glyphs.length)
-			return "10"
+		if ( (b10.is_a? String) )
+			b10 = b10.to_i(10)
 		end
-		return @glyphs[b10]
+		out = ""
+		if (b10 >= @glyphs.length)
+			out +=  self.encode( (b10/@glyphs.length).floor )
+			b10 = b10 % @glyphs.length
+		end
+		out += @glyphs[b10]
 	end
 end
