@@ -15,6 +15,9 @@ class baseref {
 	}
 
 	public function encode($b10) {
+		if ( preg_match('/^\d+$/',$b10) !== 1) {
+			return false;
+		}
 		$b10 = (float) $b10;
 		if ( ($b10<0) || (($b10 - floor($b10)) != 0) ) {
 			return false;

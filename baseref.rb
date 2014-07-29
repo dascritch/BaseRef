@@ -11,7 +11,7 @@ class BaseRef
 
 	def encode(b10)
 		if ( (b10.is_a? String) )
-			if ( ( b10 =~  /^[0-9]+$/ ) != 0 )
+			if ( ( b10 =~  /^\d+$/ ) != 0 )
 				return false
 			end
 			b10 = b10.to_f
