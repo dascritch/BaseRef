@@ -23,6 +23,9 @@ Noted issues
 * Strangely, PHP doesn't accept strict comparison between a floored int and an int : `$b10 = (int) $b10; if ( ($b10<0) || (floor($b10) != $b10) )` .
 * in PHP::`decode($based)`, `$based` should be casted as string (`strtoupper()` do the job), seems that `json_decode()` translate keys strings in integers, so `"0"` and `"9"` are integers !
 * Friendly documentation of Ruby gives source of the native function in ruby if available
+* Rust is not easy to install up today (version 0.11), but you can use [a repo for ubuntu](http://kianmeng.org/blog/2014/01/20/ubuntu-13-dot-10-rust-installation/)
+* Rust do warn on `isValid` , as this language prefer snake instead of camelCase : « warning: function `isValid` should have a snake case name such as `is_valid`, #[warn(non_snake_case_functions)] on by default »
+* Yes, messages in Rust are markdown ready ^^
 * Noted (and corrected, that is the exercise goal) typos in documentations :
  * [QUnit](https://github.com/jquery/qunitjs.com/pull/77)
  * [Atoum](https://github.com/atoum/atoum/pull/345)

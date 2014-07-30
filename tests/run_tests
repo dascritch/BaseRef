@@ -2,9 +2,24 @@
 
 echo "Python"
 python3 tests.py
+echo "________________"
+
 
 echo "PHP (Atoum)"
 php tests.atoum.php
+echo "________________"
 
 echo "Ruby"
-ruby tests.rb 
+ruby tests.rb
+echo "________________"
+
+
+echo "Rust"
+rustc --test tests.rs
+if [-e tests] do
+	./tests
+	rm tests
+done
+echo "________________"
+
+
