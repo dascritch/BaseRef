@@ -1,10 +1,18 @@
-#[path="../baseref.rs"]
-mod BaseRef;
-
 /*
+
+ #[path="../baseref.rs"]
+mod baseref;
+*/
+
+
+
+
+
 #[test]
 fn this_tests_code() {
-	let baseref = ::BaseRef;
-    // assert!(x == 2);
+
+	let baseref = BaseRef();
+	//baseref.isValid();
+
+    //assert!(x == 2);
 }
-*/
