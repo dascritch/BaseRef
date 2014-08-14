@@ -28,7 +28,7 @@ fn encode(b10: &str) -> &str {
 
     match base10 {
         Some(number) => b10,
-        None         => "0"
+        None         => { b10 = "0" }
     }
     return b10
 }
