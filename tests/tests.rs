@@ -21,14 +21,14 @@ fn isValid(validate: &str) -> bool {
 	return rule.is_match(validate);
 }
 
-fn encode(b10: &str) -> &str {
+fn encode(b10: &str)  {
 	let glyphs = "0123456789ACDEHFJKMNPQRTUVWX";
 
     let base10: Option<int> = from_str(b10.as_slice().trim());
 
     match base10 {
         Some(number) => b10,
-        None         => { b10 = "0" }
+        None         => return "0"
     }
     return b10
 }
