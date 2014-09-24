@@ -9,6 +9,10 @@ But if you find it really useful, I'll be happy.
 
 Author : [Xavier "dascritch" Mouton-Dubosc](http://dascritch.com)
 
+Blogged about it there (in French):
+
+1. [Relire un numéro de commande écrit à la main](http://dascritch.net/post/2014/09/23/BaseRef-1-comment-relire-le-num%C3%A9ro-de-commande-%C3%A9crit-%C3%A0-la-main)
+
 Principles
 ----------
 The “conventionnal” base 36 uses numbers then letters : `0123456789ABCDEFHIJKLMNOPQRSTUVWXYZ`
