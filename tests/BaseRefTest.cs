@@ -329,5 +329,13 @@ namespace BaseRef
             int result = tested.Decode("-AX");
             Assert.Inconclusive();
         }
+        
+        [TestMethod]
+        public void BaseRef_IsValid_StringWithDefault_NotValid()
+        {
+            BaseRef tested = new BaseRef();
+            var result = tested.IsValid(default(char) + "$$");
+            Assert.IsFalse(result);
+        }
     }
 }
