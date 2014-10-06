@@ -28,8 +28,7 @@ namespace BaseRef
         /// <returns><c>true</c> if the specified string is a valid BaseRef; otherwise, <c>false</c>.</returns>
         public bool IsValid(string test)
         {
-            char containsNonAuthorizedGlyph = test.AsEnumerable().FirstOrDefault(glyph => !GLYPHS.Contains(glyph));
-            return containsNonAuthorizedGlyph == default(char);
+            return test.AsEnumerable().Any(glyph => !GLYPHS.Contains(glyph)) == false;
         }
 
         /// <summary>
