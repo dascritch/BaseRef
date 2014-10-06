@@ -53,6 +53,7 @@ Implementations
 * Python 3
 * PHP (with Atoum)
 * Ruby 1.9.3
+* C#
 
 Licence
 -------
